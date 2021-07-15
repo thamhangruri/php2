@@ -1,0 +1,19 @@
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+RewriteEngine on
+RewriteRule ^$ site-copy/
+RewriteRule ^dang-nhap/$ /PHP2/Asm/banhang/site-copy/?ctrl=login
+RewriteRule ^dang-ky/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=register
+RewriteRule ^doi-mat-khau/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=changepass
+RewriteRule ^quen-mat-khau/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=quenmk
+RewriteRule ^gio-hang/$ site-copy/?ctrl=home&act=cartview
+RewriteRule ^them-vao-gio-hang/(.*)$ site-copy/?ctrl=home&act=cart&what=add&id=$1
+RewriteRule ^xoa-khoi-gio-hang/(.*)$ /PHP2/Asm/banhang/site-copy/?ctrl=home&act=cart&what=remove&id=$1
+RewriteRule ^trang-chu/$ site-copy/?ctrl=home
+RewriteRule ^dien-thoai/$ site-copy/?ctrl=home&act=allproducts
+RewriteRule ^hang/$ site-copy/?ctrl=home&act=cat
+RewriteRule ^chi-tiet/(.*)$ site-copy/?ctrl=home&act=detail&id=$1
+RewriteRule ^hang/(.*)$ site-copy/?ctrl=home&act=cat&id=$1
+ErrorDocument 404 /PHP2_htaccess/loi404.html
+

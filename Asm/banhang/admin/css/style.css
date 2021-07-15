@@ -1,0 +1,78 @@
+
+header.row{
+    height: 60px
+}
+header .logo{
+    height: 44px;
+    padding-left: 15px;
+}
+/* Logo */
+.logo img{
+    float: left;
+}
+.logo p{
+    color: lightgray;
+    margin-top: 7%;
+    padding-top: 6%;
+}
+.bdbottom{
+    border-bottom: 1px solid lightgray;
+    background-color: #24344e;
+}
+/* Bên phải logo */
+.shadowne{
+    box-shadow: 5px 10px 8px -12px #888888;
+}
+/* Menu bên trái */
+nav.row {
+    height: 40px;
+    line-height: 40px;
+}
+aside{
+    background-color: #3c4b64;
+    height: 1500px;
+}
+aside .dashboard{
+    padding: 14px;
+    padding-left: 20px;
+}
+aside .dashboard:hover{
+    background-color: #2c394e;
+}
+aside .dashboard a{
+    color: lightgray;
+    text-decoration: none;
+}
+.accordion button{
+    color: lightgray!important;
+    background-color: #3c4b64!important;
+}
+.accordion button:hover{
+    background-color: #2c394e!important;
+}
+.accordion-button{
+    color: lightgray;
+    background-color: black;
+}
+.accordion-button:focus{
+    border: 1px solid lightgray;
+}
+.accordion-body a{
+    color: lightgray;
+    text-decoration: none;
+}
+.accordion-body a:hover{
+    color: black;
+}
+.accordion-body p{
+    border-bottom: 1px solid lightgray;
+}
+footer.row {
+    height: 40px;
+}
+div.noidung {
+    min-height: 500px
+}
+div.noidung >main  {
+
+}

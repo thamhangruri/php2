@@ -1,0 +1,19 @@
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+RewriteBase /PHP2/Asm/banhang/
+RewriteRule ^$ site-copy/
+RewriteRule ^hang/$ site-copy/?ctrl=home&act=cat [L]
+RewriteRule ^hang/([a-zA-Z0-9-]+)/$ site-copy/?ctrl=home&act=cat&slug=$1 [L]
+RewriteRule ^chi-tiet/([a-zA-Z0-9-]+)/$ site-copy/?ctrl=home&act=detail&slug=$1 [L]
+RewriteRule ^dang-nhap/$ /PHP2/Asm/banhang/site-copy/?ctrl=login [L]
+RewriteRule ^dang-ky/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=register [L]
+RewriteRule ^doi-mat-khau/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=changepass [L]
+RewriteRule ^quen-mat-khau/$ /PHP2/Asm/banhang/site-copy/?ctrl=login&act=quenmk [L]
+RewriteRule ^gio-hang/$ site-copy/?ctrl=home&act=cartview [L]
+RewriteRule ^them-vao-gio-hang/(.*)$ site-copy/?ctrl=home&act=cart&what=add&id=$1
+RewriteRule ^xoa-khoi-gio-hang/(.*)$ /PHP2/Asm/banhang/site-copy/?ctrl=home&act=cart&what=remove&id=$1
+RewriteRule ^trang-chu/$ site-copy/?ctrl=home
+RewriteRule ^dien-thoai/$ site-copy/?ctrl=home&act=allproducts

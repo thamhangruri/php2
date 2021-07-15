@@ -1,0 +1,235 @@
+body{
+    background: linear-gradient(180deg,#faeddf 3.85%,#f1d7ca 17.64%),#f4e1d3!important;
+    font-family: inherit;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+.wrapper-main{
+    position: relative;
+}
+main.wrapper-main:before{
+    background: url(https://img.fpt.shop/w_3200/h_1320/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Content/v5d/sale-special/images/left-top.png?v=27) no-repeat center;
+    background-size: cover;
+}
+main.wrapper-main:after{
+    background: url(https://img.fpt.shop/w_3200/h_1320/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Content/v5d/sale-special/images/right-top.png?v=27) no-repeat center;
+    background-size: cover;
+    right: 0;
+}
+main.wrapper-main:before,main.wrapper-main:after{
+    content: '';
+    position: absolute;
+    top:0;
+    pointer-events: none;
+    width: 467px;
+    height: 767px;
+    z-index: -1;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    transform: translateY(-14.5%);
+}
+main.wrapper-main.fix:before{
+    position: fixed;
+}
+main.wrapper-main.fix:after{
+    position: fixed;
+}
+
+/* Top Nav */
+.top-nav{
+    height: 60px;
+    background-color: #cd1818;
+    position: relative;
+}
+.top-nav a{
+    font-size: 11pt;
+    text-transform: uppercase;
+}
+nav{
+    font-weight: 400;
+    background-color: black;
+    height: 40px;
+}
+nav a{
+    color: white;
+}
+.wrapper{
+    min-height: 285px;
+}
+.slogan{
+    margin: 40px auto 30px;
+}
+.slogan h1{
+    font-weight: normal;
+    color: black;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1pt;
+    margin: 0;
+    padding: 9px 0;
+}
+.producta{
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.cloimg-item{
+    margin-bottom: 10px;
+}
+.title{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    margin-bottom: 40px;
+    position: relative;
+}
+.title h3{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+    z-index: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* Show bộ sưu tập */
+.show-product{
+    margin-bottom: 5%;
+}
+.name-collection{
+    text-align: center;
+}
+.name-collection p{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18pt;
+    border-bottom: 2px solid #f0f0f0;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 0;
+}
+.text-collection a{
+    background-color: #cd1818;
+    color: white;
+}
+.card-collection{
+    margin-top: 3%;
+}
+footer{
+    background: #b39966 none repeat scroll 0 0;
+    color: #fff;
+    padding: 25px 0 40px;
+}
+.box-tt{
+    padding-left: 19%;
+}
+.box-tt h4{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto 10px;
+    padding-bottom: 11px;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.box-tt h4 a{
+    color: #fff !important;
+    text-transform: uppercase;
+}
+footer ul{
+    margin-bottom: 5px !important;
+    list-style: none;
+    padding-left: 47px;
+}
+footer ul a{
+    color: #fff;
+    font-size: 18px;
+}
+.tab-content2 label{
+    color: black;
+}
+/* Hien thi san pham */
+/* zoom hinh */
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+  
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* Chi tiet san pham */
+/*Custom giao dien */
+/* Body*/
+.black{
+    background-color: #3a3737;
+    color: lightgray;
+}
+/* Menu */
+.top-nav1{
+    background-color: #302b2b;
+    border-bottom: 1px solid lightgray;;
+}
+.nav-bar2>.chutrang>a{
+    color: white;
+}
+.nav-bar2>a{
+    color: lightgray;
+}
+.nav-bar2>ul>li>ul>li>a{
+    color: black;
+}
+.nav-bar2>ul>li>a{
+    color: lightgray;
+}
+.nav-bar2>form>input{
+    background-color: #302b2b;
+}
+.nav-block{
+    display: block;
+}
+/* Nút tìm kiếm */
+.nav-bar2>.bg-trang{
+    background-color: lightgray;
+}
+/* Chữ Sky dưới banner*/
+.chu-trang>h1{
+    color: lightgray;
+}
+/*card sản phẩm */
+.card-body2{
+    background-color: #403e3e;
+}
+.card-body2>a{
+    background-color: #796e58;
+}
+/*Footer*/
+.bg-black{
+    background-color: #2e2b2b;
+    color: lightgray;
+    border-top: 1px solid lightgray;
+}
+/* Tên nhà sản xuất */
+.tensx{
+    padding-top: 5%;
+}
+.tensx img{
+    padding-left: 2%;
+}
+.tensx a b{
+    color: black;
+    padding-left: 2%;
+}
+
+
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;}
+	.navbar .nav-item:hover .nav-link{ color: #c9af7d;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:190%;  }
+	.navbar .nav-item:hover .dropdown-menu{ color: #c9af7d;transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
